@@ -1,1 +1,69 @@
-// хедер
+.footer__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.mail__icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.call__icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.location__icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.right__icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.footer__p2 {
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+}
+
+.footer__item {
+    margin-top: 30px;
+    margin-left: 43px;
+    // display: flex;
+    // align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.footer__link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    color: rgb(153, 153, 153);
+    gap: 30px;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    margin-top: 70px;
+    background: rgb(246, 246, 248);
+}
+
+.copyright{
+    @extend .main__p;
+}

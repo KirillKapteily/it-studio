@@ -1,1 +1,74 @@
-// ХЕДЕР
+header {
+    background-image: url('../../img/first-screen.jpeg');
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.header__list__nav {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left: 10px;
+}
+
+.header__line {
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.headee__link {
+    color: white;
+    text-decoration: none;
+}
+
+.hero__p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 221px;
+}
+
+.hero__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero__button {
+    display: flex;
+    justify-content: center;
+    background-color: $accent-color;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    border-radius: 50px;
+    border: none;
+    padding: 16px 36px;
+    margin: 0 auto;
+    
+}
+
+.marg{
+ padding-bottom: 221px;   
+}

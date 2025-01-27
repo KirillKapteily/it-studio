@@ -1,5 +1,6 @@
 header {
     background-image: url('../../img/first-screen.jpeg');
+    background-size: cover;
 }
 
 .header__wrapper {
@@ -21,7 +22,10 @@ header {
 }
 
 .header__line {
-    border: 1px solid rgb(224, 224, 224);
+    border: 1px solid rgba(224, 224, 224, 0.496);
+width: 100%;
+position: absolute;
+top: 75px;
 }
 
 .headee__link {
@@ -39,6 +43,10 @@ header {
     letter-spacing: 0%;
     text-align: center;
     margin-top: 221px;
+}
+
+.header__item{
+    margin-top: 10px;
 }
 
 .hero__title {

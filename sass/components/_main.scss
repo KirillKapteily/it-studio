@@ -8,7 +8,7 @@
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 0%;
-    margin-top: 110px;
+    padding-top: 110px;
 }
 
 .main__p {
@@ -80,6 +80,12 @@ height: 70px;
 position: relative;
 top: 43px;
 left: 58px;
+}
+
+.our__work__section{
+  display: flex;
+    background: linear-gradient(180.00deg, rgb(95, 18, 208) 20.443%, rgb(255, 255, 255) 80.911%), rgb(196, 196, 196);
+
 }
 
 .main__title-2 {
@@ -186,11 +192,9 @@ width: 100px;
     font-size: 16px;
 }
 
-.main__wrapper__work {
-    display: flex;
-    background: linear-gradient(90.00deg, rgb(80, 77, 194) 20.443%, rgb(95, 18, 208) 80.911%), rgb(196, 196, 196);
-
-}
+// .main__wrapper__work {
+  
+// }
 
 .main__list__work {
     display: flex;

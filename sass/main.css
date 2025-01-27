@@ -10,6 +10,7 @@ body {
 
 header {
   background-image: url("../../img/first-screen.jpeg");
+  background-size: cover;
 }
 
 .header__wrapper {
@@ -31,7 +32,10 @@ header {
 }
 
 .header__line {
-  border: 1px solid rgb(224, 224, 224);
+  border: 1px solid rgba(224, 224, 224, 0.496);
+  width: 100%;
+  position: absolute;
+  top: 75px;
 }
 
 .headee__link {
@@ -49,6 +53,10 @@ header {
   letter-spacing: 0%;
   text-align: center;
   margin-top: 221px;
+}
+
+.header__item {
+  margin-top: 10px;
 }
 
 .hero__title {
@@ -156,7 +164,7 @@ footer {
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0%;
-  margin-top: 110px;
+  padding-top: 110px;
 }
 
 .main__p, .main__p__video, .copyright {
@@ -226,6 +234,11 @@ footer {
   position: relative;
   top: 43px;
   left: 58px;
+}
+
+.our__work__section {
+  display: flex;
+  background: linear-gradient(180deg, rgb(95, 18, 208) 20.443%, rgb(255, 255, 255) 80.911%), rgb(196, 196, 196);
 }
 
 .main__title-2 {
@@ -327,11 +340,6 @@ footer {
   margin-bottom: 120px;
   margin-right: 0px;
   font-size: 16px;
-}
-
-.main__wrapper__work {
-  display: flex;
-  background: linear-gradient(90deg, rgb(80, 77, 194) 20.443%, rgb(95, 18, 208) 80.911%), rgb(196, 196, 196);
 }
 
 .main__list__work {

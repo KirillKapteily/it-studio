@@ -17,9 +17,17 @@
     <header>
         <hr class="header__line">
         <div class="container">
-
-
             <div class="header__wrapper">
+                <div id="sidebar" class="sidebar">
+                    <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+                    <a href="#" class="sidebar-link">Головна</a>
+                    <a href="#" class="sidebar-link">Наші проекти</a>
+                    <a href="#" class="sidebar-link">Послуги</a>
+                    <a href="#" class="sidebar-link">Новини</a>
+                    <a href="#" class="sidebar-link">Контакти</a>
+            
+                  </div>
+                  <button class="openbtn" onclick="openMenu()">☰</button>
                 <ul class="header__list">
                     <li class="header__item"><a href="index.html" class="headee__link">Головна</a></li>
                     <li class="header__item"><a href="#" class="headee__link">Наші проекти</a></li>
@@ -42,7 +50,7 @@
                             <h2 class="modal__title">Залиште свої дані, <br>ми вам зателефонуємо</h2>
                             <p class="modal__par">Ім'я</p>
                             <label><input id="name" name="name" 
-                                    class="modal__input"></label>
+                                    class="modal__input width__important"></label>
                             <p class="modal__par">Телефон</p>
                             <label><svg class="modal__img">
                                 <use href="img/symbol-defs.svg#icon-call" widht="20" height="20"></use>
@@ -235,7 +243,7 @@
                 
             </section>
             <hr class="work__hr">
-            <section>
+            <section class="apply__sect">
                 <div class="container">
                     <h4 class="main__title__input">Підпишіться на нашу розсилку</h4>
                 <p class="main__p">Корисні статті, акції, новини - отримайте все це зараз!</p>
@@ -336,4 +344,44 @@
     </footer>
 </body>
 <script src="script.js"></script>
+<script>
+    (() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
+
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();
+function openMenu() {
+    document.getElementById("sidebar").style.left = "0";
+    document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+}
+
+function closeMenu() {
+    document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
+    document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+}
+
+</script>
 </html>

@@ -80,3 +80,53 @@ top: 75px;
 .marg{
  padding-bottom: 221px;   
 }
+
+.sidebar-link{
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+  
+  .sidebar {
+      height: 100%;
+      width: 250px; /* Ширина бокового меню */
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -250px; /* Скрыто изначально */
+      background-color: #11111100;
+      backdrop-filter: blur(10px);
+      overflow-x: hidden;
+      transition: 0.3s; /* Плавный переход */
+      padding-top: 60px;
+  }
+  
+  .closebtn{
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+  
+  .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+      background-color: rgba(0, 145, 255, 0.145);
+  }
+  
+  .openbtn {
+    color: white;
+      font-size: 30px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    //   margin-left: 140px;
+  }
+  
+  #main {
+      transition: margin-left 0.3s;
+      padding: 16px;
+  }
+  

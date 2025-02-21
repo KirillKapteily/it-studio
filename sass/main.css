@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "Montserrat", serif;
+  margin: 0px 0px;
 }
 
 .container {
@@ -37,8 +38,9 @@ body {
   .width__important {
     width: 300px !important;
   }
-  .main__title__2 {
+  .main__title-2 {
     padding-bottom: 20px;
+    width: 320px !important;
   }
   .modal__area {
     width: 300px !important;
@@ -96,6 +98,9 @@ body {
   }
   .main__item__2 {
     gap: 10px !important;
+  }
+  .header__line {
+    width: 98% !important;
   }
   .main__img__2 {
     width: 300px;
@@ -675,7 +680,7 @@ footer {
   background: rgb(255, 255, 255);
   width: 489px;
   height: 45px;
-  padding-left: 33px;
+  padding-left: 13px;
   padding-bottom: 15px;
   padding-top: 15px;
   display: flex;

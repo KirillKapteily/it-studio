@@ -17,7 +17,7 @@
     align-items: center;
     text-align: center;
     color: $p-color;
-
+margin-bottom: 70px;
 }
 
 .main__list {
@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     color: $p-color;
+
 }
 
 .main__button {
@@ -75,6 +76,16 @@
 /* Accent */
 border: 1px solid rgb(73, 133, 255);
 border-radius: 50%;
+width: 200px;
+height: 70px;
+position: relative;
+top: 43px;
+left: 58px;
+}
+
+.decor__2{
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 50%;
 width: 200px;
 height: 70px;
 position: relative;

@@ -89,8 +89,6 @@
                     стандартною "рибою" для текстів на латиниці з початку XVI ст.</p>
                 <ul class="main__list">
                     <li class="main__item">
-                        <!-- <div class="decor"></div>
-                        <div class="decor__2"></div> -->
                              <img src="img/write1.svg" alt="write" class="main__img">
                         
                        
@@ -102,7 +100,6 @@
 
                     </li>
                     <li class="main__item">
-                        <!-- <div class="decor"></div> -->
                         <img src="img/write1.svg" alt="write" class="main__img">
                         <div>
                             <h3>Створення сайтів</h3>
@@ -112,7 +109,6 @@
 
                     </li>
                     <li class="main__item">
-                        <!-- <div class="decor"></div> -->
                         <img src="img/write1.svg" alt="write" class="main__img">
                         <div>
                             <h3>Створення сайтів</h3>
@@ -366,7 +362,6 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
-  // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
@@ -376,12 +371,12 @@
 })();
 function openMenu() {
     document.getElementById("sidebar").style.left = "0";
-    document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+    document.getElementById("main").style.marginLeft = "250px"; 
 }
 
 function closeMenu() {
-    document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
-    document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+    document.getElementById("sidebar").style.left = "-250px"; 
+    document.getElementById("main").style.marginLeft = "0"; 
 }
 
 </script>

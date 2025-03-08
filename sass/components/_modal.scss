@@ -22,21 +22,7 @@
   .btn__send {
     @extend .hero__button;
     cursor: pointer;
-    //   color: rgb(255, 255, 255);
     font-family: "Montserrat", serif;
-    // font-size: 16px;
-    // font-weight: 700;
-    // line-height: 30px;
-    // letter-spacing: 6%;
-    // text-align: center;
-    // border-radius: 4px;
-    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    // background: rgb(33, 150, 243);
-    // width: 200px;
-    // height: 50px;
-    // border-style: none;
-    // transition-property: background-color, transform;
-    //   transition-duration: 250ms;
   
     .btn__send:hover {
       background-color: $accent-color-hover;
@@ -96,7 +82,6 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    // padding: 6px;
     box-sizing: border-box;
     border-radius: 100%;
     background-color: white;
